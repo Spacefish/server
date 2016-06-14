@@ -357,7 +357,7 @@ class OC {
 
 			// render error page
 			$template = new OC_Template('', 'update.use-cli', 'guest');
-			$template->assign('productName', 'ownCloud'); // for now
+			$template->assign('productName', 'Nextcloud'); // for now
 			$template->assign('version', OC_Util::getVersionString());
 			$template->assign('tooBig', $tooBig);
 
@@ -388,7 +388,7 @@ class OC {
 		$ocVersion = \OCP\Util::getVersion();
 		$tmpl->assign('appsToUpgrade', $appManager->getAppsNeedingUpgrade($ocVersion));
 		$tmpl->assign('incompatibleAppsList', $appManager->getIncompatibleApps($ocVersion));
-		$tmpl->assign('productName', 'ownCloud'); // for now
+		$tmpl->assign('productName', 'Nextcloud'); // for now
 		$tmpl->assign('oldTheme', $oldTheme);
 		$tmpl->printPage();
 	}
